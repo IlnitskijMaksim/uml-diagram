@@ -1,47 +1,116 @@
 package domain;
 
+
+ /**
+ * The class Penguin extends predator
+ */ 
 public class Penguin extends Predator {
 
     private String specie;
 
-    public Penguin(String name, int weight, int height, String specie) {
+
+/** 
+ *
+ * Penguin
+ *
+ * @param name  the name
+ * @param weight  the weight
+ * @param height  the height
+ * @param specie  the specie
+ * @return public
+ */
+    public Penguin(String name, int weight, int height, String specie) { 
+
         this.name=name;
         this.weight=weight;
         this.height=height;
         this.specie=specie;
     }
 
-    public Penguin() {
+
+/** 
+ *
+ * Penguin
+ *
+ * @return public
+ */
+    public Penguin() { 
+
         this("GigaChad", 50, 130,"Emperor penguin");
     }
 
-    public Penguin(String name) {
+
+/** 
+ *
+ * Penguin
+ *
+ * @param name  the name
+ * @return public
+ */
+    public Penguin(String name) { 
+
         this(name,50,130,"Emperor penguin");
     }
     
    
 
-    public void swim() {
+
+/** 
+ *
+ * Swim
+ *
+ */
+    public void swim() { 
+
         System.out.println("Penguin really like swimming");
     }
 
     @Override
-    public void hunt() {
+
+/** 
+ *
+ * Hunt
+ *
+ */
+    public void hunt() { 
+
         System.out.println("Penguin really well hunting for fish");
     }
 
     @Override
-    public String toString() {
+
+/** 
+ *
+ * To string
+ *
+ * @return String
+ */
+    public String toString() { 
+
         return super.toString()+"\nSpecie:\t"+this.specie+"\n\nThis is Penguin";
     }
 
     @Override
-    public void speak() {
+
+/** 
+ *
+ * Speak
+ *
+ */
+    public void speak() { 
+
         System.out.println("Squack squack!");
     }
 
     @Override
-    public void eat() {
+
+/** 
+ *
+ * Eat
+ *
+ */
+    public void eat() { 
+
         System.out.println("Penguin eats krill, squids and fishes");
     }
     
